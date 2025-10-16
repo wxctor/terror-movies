@@ -1,0 +1,335 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Mate+SC&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Boldonse&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)),
+    url(src/wallpapers/wallpaper.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 98, 9vw;
+  text-align: center;
+  font-family: "Roboto";
+  color: #fff;
+  background-size: 100% 100%;
+  animation: slider 100s linear infinite;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+header h1 {
+  font-weight: 900;
+  font-size: 55px;
+  font-family: "Boldonse";
+  outline: none;
+  color: #fff;
+  background: linear-gradient(to left, #fff, #303030, #fff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-size: 200%;
+  animation: animated-gradient-text 5s linear infinite;
+  margin: 100px 0 0 0;
+}
+header p {
+  font-family: "Kanit";
+  font-weight: 300;
+  font-size: 22px;
+  margin-top: -18px;
+  margin-bottom: 250px;
+}
+header {
+  margin: 0 0 150px 0;
+}
+
+.item-resultado {
+  color: #000;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 25px;
+  margin: 20px;
+  font-family: "Poppins", Arial, sans-serif;
+}
+.item-resultado a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 800;
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+.resultados-pesquisa {
+  padding: 20px;
+  width: 550px;
+  margin: 0 auto;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+footer {
+  margin: 40vh 0 0 0;
+}
+
+.genero {
+  color: #646363;
+  font-weight: 600;
+}
+.sinopse {
+  color: #3e3e3e;
+  font-weight: 500;
+  text-align: initial;
+}
+.cape {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #3d3d3d27;
+  border-radius: 10px;
+}
+
+button {
+  display: block;
+  padding: 11px 27px 11px 27px;
+  font-size: 16px;
+  background-color: #2a2a2a;
+  font-family: "Poppins", Arial, sans-serif;
+  font-weight: 700;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  border: none;
+  color: #fff;
+  margin: 0;
+}
+
+button:hover {
+  transform: scale(1.1);
+  background-color: #fff;
+  color: #2a2a2a;
+}
+.pesquisa {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  padding: 0;
+  gap: 15px;
+  margin: 0 0 50px 0;
+}
+
+input {
+  padding: 10px 50px 10px 50px;
+  text-align: center;
+  font-family: "Poppins", Arial, sans-serif;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  margin: 0;
+  transition: 0.3s;
+  outline: 1px solid black;
+}
+
+input:focus {
+  transform: scale(1.1);
+  background-color: #2a2a2a;
+  color: #fff;
+}
+
+input:focus::placeholder {
+  color: #fff;
+}
+
+@keyframes animated-gradient-text {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: 200%;
+  }
+}
+
+#bat-container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* para não atrapalhar cliques no site */
+  z-index: -1;
+}
+
+.bat {
+  position: absolute;
+  font-size: 24px;
+  animation: fly 5s linear infinite;
+  transform: rotate(0deg);
+}
+
+.bat img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  pointer-events: none;
+}
+
+@keyframes fly {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(var(--x), var(--y)) rotate(0deg);
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)),
+      url(src/wallpapers/wallpaper1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+  }
+  header h1 {
+    font-size: 80px;
+  }
+
+  header p {
+    width: 350px;
+    margin: 0 auto;
+    font-size: 23px;
+  }
+  .pesquisa {
+    display: block;
+    gap: 10px;
+  }
+  #campo-pesquisa {
+    padding: 10px 10px 10px 10px;
+  }
+  button {
+    margin: 0 auto;
+    padding: 15px 35px 15px 35px;
+    font-size: 20px;
+  }
+  button:hover {
+    transform: scale(1);
+    background-color: #2a2a2a;
+    color: #fff;
+  }
+  input {
+    padding: 16px 50px 16px 50px;
+    font-size: 19px;
+    margin-bottom: 10px;
+  }
+  input:focus {
+    transform: none;
+    background-color: #2a2a2a;
+    color: #fff;
+  }
+  input::placeholder {
+    font-size: 19px;
+  }
+  input:focus::placeholder {
+    color: #fff;
+  }
+  .resultados-pesquisa {
+    padding: 30px;
+    width: 500px;
+    margin: 0 auto;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: initial;
+  }
+  .sinopse {
+    font-size: 15px;
+  }
+  .notfound {
+    margin: 0 auto;
+    right: 0;
+    left: 0;
+    text-align: center;
+  }
+  h2 {
+    text-align: center;
+  }
+  .genero {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  header h1 {
+    font-size: 35px;
+  }
+  header p {
+    width: 335px;
+    font-size: 15px;
+    margin-top: -10px;
+  }
+  .pesquisa {
+    display: block;
+  }
+  button {
+    padding: 10px 25px 10px 25px;
+    font-size: 18px;
+  }
+  input {
+    padding: 10px 30px 10px 30px;
+    font-size: 18px;
+  }
+  .resultados-pesquisa {
+    padding: 0px;
+    width: 300px;
+    margin: 0 auto;
+    font-weight: 500;
+    font-size: 17px;
+  }
+  .item-resultado {
+    width: 280px;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 20px 0;
+  }
+  .item-resultado h2 {
+    font-size: 20px;
+  }
+  #campo-pesquisa {
+    padding: 10px 20px 10px 20px;
+  }
+  input::placeholder {
+    font-size: 15px;
+  }
+  #pesquisar {
+    font-size: 15px;
+    padding: 10px 40px 10px 40px;
+  }
+  .sinopse {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 200px) {
+  #campo-pesquisa {
+    padding: 10px 20px 10px 20px;
+  }
+  .sinopse {
+    font-size: 15px;
+  }
+}
