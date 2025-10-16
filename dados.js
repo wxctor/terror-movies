@@ -193,7 +193,7 @@ let dados = [
     img: "src/album/chamado4.jpeg",
     sinopse:
       "O Chamado 4 segue Ayaka Ichijo, uma estudante que é cética em relação ao vídeo e à lenda que o cerca, que se tornou uma sensação viral. Ela logo descobre que sua irmã Futaba viu uma cópia da fita e descobre que a morte dela não ocorrerá em sete dias, mas em 24 horas, levando-a a desvendar a maldição de Sadako para salvá-la.",
-    genero: "Terror / Suspsense",
+    genero: "Terror / Suspense",
     tags: "terror, suspense, horror, samara, maldição, continuação",
     link: "https://www.adorocinema.com/filmes/filme-310889/",
   },
@@ -274,7 +274,7 @@ let dados = [
     img: "src/album/massacre.webp",
     sinopse:
       "Em 1973, a polícia texana deu como encerrado o caso de um terrível massacre de 33 pessoas provocado por um homem que usava uma máscara feita de pele humana. Nos anos que se seguiram os policiais foram acusados de fazer uma péssima investigação e de terem matado o cara errado. Só que dessa vez, o único sobrevivente do massacre vai contar em detalhes o que realmente aconteceu na deserta estrada do Texas, quando ele e mais 4 amigos estavam indo visitar o seu avô.",
-    genero: "Terror / Suspense",
+    genero: "Terror Slasher",
     tags: "terror, suspense, antigo, massacre",
     link: "https://www.adorocinema.com/filmes/filme-2048/",
   },
@@ -711,3 +711,4 @@ let dados = [
     link: "https://www.adorocinema.com/filmes/filme-275131/",
   },
 ];
+
